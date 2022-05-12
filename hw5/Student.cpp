@@ -43,6 +43,20 @@ double Student::calculateScore()
 
     }
 
+    if(midterm_score == -1)
+    {
+
+        midterm_score = 0;
+
+    }
+
+    if(finalexam_score == -1)
+    {
+
+        finalexam_score = 0;
+
+    }
+
     semester_score = (homework_temp * 0.4 + midterm_score * 0.3 + finalexam_score * 0.3) - (5 * plagiarism);
 
     if(semester_score < 0)
